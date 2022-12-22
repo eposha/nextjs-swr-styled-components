@@ -1,3 +1,9 @@
+import { createGlobalStyle, css } from 'styled-components';
+
+import { Inter } from '@next/font/google';
+const inter = Inter({ subsets: ['latin'] });
+
+export const GlobalStyle = createGlobalStyle`
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -74,6 +80,7 @@
 }
 
 * {
+  ${inter.style};
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -105,3 +112,5 @@ a {
     color-scheme: dark;
   }
 }
+
+`;
