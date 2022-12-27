@@ -17,15 +17,11 @@ export const FlRowCenterContainer = styled.div<IFlexCenterContainer>`
   ${FlexCenter};
 `;
 
-export const FlCenterContainer = styled(
-  FlRowCenterContainer
-)<IFlexCenterContainer>`
+export const FlCenterContainer = styled(FlRowCenterContainer)<IFlexCenterContainer>`
   align-items: center;
 `;
 
-export const FlColumnCenterContainer = styled(
-  FlRowCenterContainer
-)<IFlexCenterContainer>`
+export const FlColumnCenterContainer = styled(FlRowCenterContainer)<IFlexCenterContainer>`
   align-items: center;
   flex-direction: column;
 `;

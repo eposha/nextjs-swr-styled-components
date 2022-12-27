@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p $PORT",
     "lint": "next lint"
   },
   "dependencies": {
@@ -14,9 +14,8 @@
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.9",
     "axios": "^1.2.1",
-    "eslint": "8.30.0",
-    "eslint-config-next": "13.0.7",
-    "next": "13.0.7",
+    "luxon": "^3.1.1",
+    "next": "^13.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "styled-components": "^5.3.6",
@@ -27,6 +26,14 @@
     "styled-components": "^5"
   },
   "devDependencies": {
-    "@types/styled-components": "^5.1.26"
+    "@types/luxon": "^3.1.0",
+    "@types/styled-components": "^5.1.26",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "eslint": "^8.22.0",
+    "eslint-config-next": "^13.0.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.4.2",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.1"
   }
 }

@@ -1,6 +1,6 @@
 import NextImage from 'next/image';
-
 import styled, { css, keyframes } from 'styled-components';
+
 import { device } from 'styles/breakpoints';
 
 const CenterBeforeAfter = css`
@@ -27,15 +27,6 @@ const rotate = keyframes`
 `;
 
 export const Image = NextImage;
-
-export const Main = styled.main`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
-`;
 
 export const Description = styled.div`
   display: inherit;
@@ -89,11 +80,7 @@ export const DescriptionLink = styled.a`
       inset: auto 0 0;
       padding: 2rem;
       height: 200px;
-      background: linear-gradient(
-        to bottom,
-        transparent 0%,
-        rgb(var(--background-end-rgb)) 40%
-      );
+      background: linear-gradient(to bottom, transparent 0%, rgb(var(--background-end-rgb)) 40%);
       z-index: 1;
     }
   }

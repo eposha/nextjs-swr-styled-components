@@ -103,17 +103,14 @@ interface IOptionSWR {
   /**
    * callback function when a request takes too long to load (see `loadingTimeout`)
    */
-  onLoadingSlow: (
-    key: string,
-    config: Readonly<PublicConfiguration<Data, Error, Fn>>
-  ) => void;
+  onLoadingSlow: (key: string, config: Readonly<PublicConfiguration<Data, Error, Fn>>) => void;
   /**
    * callback function when a request finishes successfully
    */
   onSuccess: (
     data: Data,
     key: string,
-    config: Readonly<PublicConfiguration<Data, Error, Fn>>
+    config: Readonly<PublicConfiguration<Data, Error, Fn>>,
   ) => void;
   /**
    * callback function when a request returns an error
@@ -121,7 +118,7 @@ interface IOptionSWR {
   onError: (
     err: Error,
     key: string,
-    config: Readonly<PublicConfiguration<Data, Error, Fn>>
+    config: Readonly<PublicConfiguration<Data, Error, Fn>>,
   ) => void;
   /**
    * handler for error retry
@@ -131,7 +128,7 @@ interface IOptionSWR {
     key: string,
     config: Readonly<PublicConfiguration<Data, Error, Fn>>,
     revalidate: Revalidator,
-    revalidateOpts: Required<RevalidatorOptions>
+    revalidateOpts: Required<RevalidatorOptions>,
   ) => void;
   /**
    * callback function when a request is ignored

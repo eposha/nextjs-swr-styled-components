@@ -1,5 +1,4 @@
-import { createGlobalStyle, css } from 'styled-components';
-
+import { createGlobalStyle } from 'styled-components';
 import { Inter } from '@next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
