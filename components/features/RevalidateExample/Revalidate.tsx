@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { useRevalidateExample } from 'src/api/revalidateExample';
+import { useRevalidateExample } from 'utils/api/revalidateExample';
 import { FlCenterContainer, FlColumnCenterContainer } from 'styles/containers';
 
 const Revalidate = () => {

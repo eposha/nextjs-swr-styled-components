@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { useCountStore } from 'src/store/countExampleStore';
+import { useCountStore } from 'utils/store/countExampleStore';
 import { FlCenterContainer, FlColumnCenterContainer } from 'styles/containers';
 
 const CountResult = () => {

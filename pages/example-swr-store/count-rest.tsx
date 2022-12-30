@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { mutate } from 'swr';
 
-import { COUNT_EXAMPLE } from 'src/store/countExampleStore/useCountStore';
+import { COUNT_EXAMPLE } from 'utils/store/countExampleStore/useCountStore';
 import { FlCenterContainer, FlColumnCenterContainer } from 'styles/containers';
 
 const CountMultiply = () => {
